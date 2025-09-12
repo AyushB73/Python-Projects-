@@ -18,17 +18,27 @@ print(f"Your choice is : {dict[you]} : {you}")
 if(computer == younum):
     print("It's a draw")
 
-if(computer == -1 and younum == 0):
+if(computer == -1 and younum == 0): #-1
     print("You win!")
-elif(computer == -1 and younum == 1):
+elif(computer == -1 and younum == 1): #-2
     print("You lose")
-elif(computer == 1 and younum == 0):
+elif(computer == 1 and younum == 0): #1
     print("You lose")
-elif(computer == 1 and younum == -1):
+elif(computer == 1 and younum == -1): #2
     print("You win!")
-elif(computer == 0 and younum == 1):
+elif(computer == 0 and younum == 1): #-1
     print("You win!")
-elif(computer == 0 and younum == -1):
+elif(computer == 0 and younum == -1): #1
     print("You lose")
 else:
+
     print("Something went wrong")
+
+#Or Another simple approach to this question is :
+
+# if((computer - younum == -2) or (computer - younum == 1 )):
+#     print("You lose")
+# elif((computer - younum == 0)):
+#     print("It's a draw")
+# else:
+#     print("You win")
